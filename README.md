@@ -7,7 +7,7 @@ This is a simple python serverless lambda function which would terminate all EC2
 ``terminate.py`` - The terminate function run in every 6 hours using cloudWatch and terminate the instance which don't have Name, Env, Created_By tags.
 
 ### Setup in AWS
-* create the instance with a tag like a Name, Environment, and Created_by and without a tag(at least one)
+* Create the instance with a tag like a Name, Environment, and Created_by and without a tag(at least one)
 * Setup IAM Roles to lambda function if you don't have(IAM->Access Management->Roles->create_role->lambda->choose lambdaBasicExecutionRole and              ec2fullaccess).    
 * During creating lambda function choose to use an existing role from permission and create a function for every hour check. 
 * Copy-paste ``every-hour-call.py`` inside this function save and deploy.
