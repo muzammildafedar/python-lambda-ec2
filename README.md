@@ -3,8 +3,8 @@ This is a simple python serverless lambda function which would terminate all EC2
 
 ### Files intro.
 
-``every-hour-call.py`` - This function would call every 1 hour using cloudWatch and remind the untagged instances with instance id by email.
-``terminate.py`` - The terminate function run in every 6 hours using cloudWatch and terminate the instance which don't have Name, Env, Created_By tags.
+``every-hour-call.py`` - This function would call every 1-hour using cloud watch and remind the untagged instances with instance id by email. 
+``terminate.py`` - The terminate function runs every 6 hours using cloud watch and terminates the instance which doesn't have Name, Env, Created_By tags.
 
 ### Setup in AWS
 * Create the instance with a tag like a Name, Environment, and Created_by and without a tag(at least one)
